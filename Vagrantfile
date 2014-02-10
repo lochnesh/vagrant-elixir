@@ -9,6 +9,8 @@ Vagrant.configure("2") do |config|
 
   config.vm.network :forwarded_port, guest: 80, host: 8080
 
+  config.vm.synced_folder "~/projects/", "/home/vagrant/projects/"
+
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--memory", "2048"]
   end
