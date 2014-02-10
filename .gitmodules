@@ -13,3 +13,6 @@
 [submodule "cookbooks/apt"]
 	path = cookbooks/apt
 	url = https://github.com/opscode-cookbooks/apt.git
+[submodule "cookbooks/elixir"]
+	path = cookbooks/elixir
+	url = https://github.com/talentdeficit/chef-elixir.git
