@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision :chef_solo do |chef|
     chef.json = {
       "elixir" => {
-        "elixir_git_ref" => "v0.12.3"
+        "elixir_git_ref" => "master"
       }
     }
     chef.add_recipe "apt::default"
