@@ -12,5 +12,6 @@ A Vagrant environment (precise32) with required chef recipes for Elixir
 * cd into project root 
 * Run 'git submodule init'
 * Run 'git submodule update'
+* Create a folder '~/projects' to share with VM or edit Vagrantfile
 * Run 'vagrant up'
 
