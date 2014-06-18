@@ -18,7 +18,10 @@ Vagrant.configure("2") do |config|
   config.vm.provision :chef_solo do |chef|
     chef.json = {
       "elixir" => {
-        "elixir_git_ref" => "v0.12.4"
+        "elixir_git_ref" => "v0.14.0"
+      },
+       "erlang" => {
+        "otp_git_ref" => "OTP-17.0"
       }
     }
     chef.add_recipe "apt::default"
